@@ -10,15 +10,23 @@
 
 <body>
 
-    <form action="table.html">
+    <form action="form.html">
         <label for="iptNome">Nome:</label>
-        <input type="text" id="iptNome" name="iptNome">
+        <input type="text" id="iptNome" name="iptNome" value="Victor Vidigal" readonly>
 
         <br>
 
         <label for="iptEmail">E-mail:</label>
         <input type="text" id="iptEmail" placeholder="nome@provedor.com" name="iptEmail">
-
+        <br>
+        <br>
+        <label for="rdSolteiro">Solteiro</label>
+        <input type="radio" id="rdSolteiro" name="rdEstadoCivil" value="solteiro">
+        <label for="rdCasado">Casado</label>
+        <input type="radio" id="rdCasado" name="rdEstadoCivil" value="casado">
+        <label for="rdMilagre">A espera de um milagre</label>
+        <input type="radio" id="rdMilagre" name="rdEstadoCivil" value="milagre">
+        <br>
         <br>
 
         <label for="iptEmail">E-mail:</label>
@@ -29,8 +37,41 @@
         <br>
         <label for="iptDataNascimento">Data de nascimento:</label>
         <input type="date" id="iptDataNascimento" name="iptDataNascimento">
+        
+        
         <br>
+        <label for="cbMaiorIdade">Maior de idade?</label>
+        <input type="checkbox" id="cbMaiorIdade" name="cbMaiorId" value="true">
+        <br>
+
+        <br>
+        <label for="rdSexoMasculino">Masculino</label>
+        <input type="radio" id="rdSexoMasculino" name="rdSexo" value="masculino" required>
+        <label for="rdSexoFeminino">Feminino</label>
+        <input type="radio" id="rdSexoFeminino" name="rdSexo" value="feminino" required>
+        <label for="rdNInformar">Prefiro não informar</label>
+        <input type="radio" id="rdNInformar" name="rdSexo" value="n-informado" required>
+        <br>
+        <br>
+        <input type="password" required>
+        <input type="color">
+        <input type="file">
+        <br>
+        <input type="number" min="5" max="100" step="10" required>
+
+        <br>
+        <br>      
+        <input type="datetime-local">
+
+        <br>
+        <br>      
+        <input type="reset" value="Limpar dados">
         <input type="submit" value="Enviar dados">
+    </form>
+    <br>
+    <br>
+    <form>
+        <input type="text">
     </form>
 
 
